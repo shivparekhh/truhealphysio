@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Rajvi Soni Parekh | Physiotherapist</title>
+  <!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+
+  <!-- Google AdSense / Google Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5307829434674382"
+     crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      background: #f7f9fb; /* soft clinic white */
+      color: #2f2f2f;
+    }
+    header {
+      background: linear-gradient(135deg, #eef3f7, #dbe6ee); /* derived from photo tones */
+      color: #2f4a63;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 4px solid #2f4a63;
+    }
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+    .btn-call {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 24px;
+      background: #2f4a63;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      border: 2px solid #2f4a63;
+      box-shadow: 0 4px 12px rgba(47,74,99,0.35);
+      transition: all 0.3s ease;
+    }
+    .btn-call:hover {
+      background: #1f3548;
+      border-color: #1f3548;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(47,74,99,0.45);
+    }
+    }
+    .btn-call:hover {
+      background: #2f4a63;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .btn-call:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(190, 24, 93, 0.45);
+    }
+    section {
+      padding: 18px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2f4a63;
+      margin-bottom: 8px;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.5px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 18px;
+      border-radius: 14px;
+      border-left: 4px solid #2f4a63;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    }
+    footer {
+      background: linear-gradient(135deg, #2f4a63, #1f3548);
+      color: #ffffff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .fixed-call {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #2f4a63;
+      color: #ffffff;
+      padding: 14px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #2f4a63;
+      box-shadow: 0 6px 18px rgba(47,74,99,0.45);
+      transition: all 0.3s ease;
+    }
+    .fixed-call:hover {
+      background: #1f3548;
+      border-color: #1f3548;
+      color: #ffffff;
+    }
+    .fixed-call:hover {
+      background: #2f4a63;
+      color: #ffffff;
+    }
+    .social-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:12px 22px;
+      min-width:150px;
+      border-radius:30px;
+      background:#ffffff;
+      border:2px solid #2f4a63;
+      color:#2f4a63;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 4px 12px rgba(47,74,99,0.25);
+      transition:all .3s ease;
+    }
+    .social-btn:hover{
+      background:#2f4a63;
+      color:#ffffff;
+    }
+    .social-btn img{
+      width:18px;
+      height:18px;
+    }
+    .social-btn:hover{
+      background:#2f4a63;
+      color:#ffffff;
+    }
+  .focus-card{
+      text-align:center;
+      cursor:pointer;
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+    .focus-card img{
+      width:100%;
+      max-width:160px;
+      border-radius:50%;
+      margin-bottom:10px;
+    }
+    .focus-card:hover{
+      transform:translateY(-6px) scale(1.05);
+      box-shadow:0 14px 30px rgba(0,0,0,0.15);
+    }
+    .focus-card p{
+      font-weight:600;
+      color:#2f4a63;
+      margin:0;
+    }
+  .focus-card{
+      text-align:center;
+      cursor:pointer;
+      transition:transform .4s ease, box-shadow .4s ease, opacity .4s ease;
+      opacity:0;
+      transform:translateX(40px);
+    }
+    .focus-animate .focus-card{
+      animation:slideIn .6s forwards;
+    }
+    .focus-animate .focus-card:nth-child(1){animation-delay:.1s}
+    .focus-animate .focus-card:nth-child(2){animation-delay:.2s}
+    .focus-animate .focus-card:nth-child(3){animation-delay:.3s}
+    .focus-animate .focus-card:nth-child(4){animation-delay:.4s}
+    .focus-animate .focus-card:nth-child(5){animation-delay:.5s}
+    .focus-animate .focus-card:nth-child(6){animation-delay:.6s}
+
+    @keyframes slideIn{
+      to{opacity:1; transform:translateX(0)}
+    }
+    .focus-card:hover{
+      transform:translateY(-6px) scale(1.06);
+      box-shadow:0 16px 32px rgba(0,0,0,0.18);
+    }
+    .focus-card img{
+      width:100%;
+      max-width:150px;
+      border-radius:50%;
+      margin-bottom:10px;
+    }
+    .focus-card p{
+      font-weight:600;
+      color:#2f4a63;
+      margin:0;
+    }
+@media (max-width: 768px) {
+  header div[style*="flex"] {
+    flex-direction: column;
+    text-align: center;
+  }
+  header img {
+    width: 160px !important;
+    height: 160px !important;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+</style>
+</head>
+<body>
+
+<header style="position:relative; overflow:hidden;">
+  <div style="position:absolute; inset:0; background:url('Blausen_0822_SpinalCord.png') center/contain no-repeat; opacity:0.06;"></div>
+  <div style="position:relative; z-index:2; display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px;max-width:1000px;margin:auto;">
+    <img src="rajvi.png" alt="Dr. Rajvi Soni Parekh" style="width:200px;height:200px;border-radius:50%;object-fit:cover;border:4px solid #ffffff;" />
+    <div style="text-align:left;">
+      <div style="font-family:'Playfair Display',serif;font-size:38px;color:#2f4a63;letter-spacing:1px;">TruHeal Physiotherapy</div>
+      <div style="margin:6px 0 12px;font-size:15px;color:#6b3a3a;"><span style="color:#1f3548;">Advanced Physiotherapy & Rehabilitation Care</span></div>
+      <h1 style="margin:0;font-family:'Playfair Display',serif;"> Dr. Rajvi Soni Parekh <span style="font-size:16px;">(BPT)</span></h1>
+      <p style="margin:8px 0 14px;font-size:15px;">Physiotherapist | Home Visit Specialist</p>
+      <a href="tel:+918866028911" class="btn-call">📞 Free Consultation</a>
+      <a href="https://wa.me/8866028911" target="_blank" class="btn-call" style="margin-left:10px;">💬 Book on WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+
+
+<section>
+  <h2>About Dr. Rajvi Soni Parekh</h2>
+  <p>
+    Dr. Rajvi is a dedicated and compassionate physiotherapist focused on helping patients regain movement,
+    reduce pain, and improve overall quality of life. She believes in personalized care and evidence-based
+    treatment plans tailored to each patient’s condition and lifestyle.
+  </p>
+</section>
+
+<section>
+  <h2>Professional Summary</h2>
+  <div class="card">
+    <p>
+      Dr. Rajvi Soni Parekh is an experienced and patient-focused Physiotherapist with <strong>4+ years of clinical experience</strong>
+      in delivering evidence-based physiotherapy care across hospital, clinic, and home-visit settings.
+      She is highly skilled in detailed assessment, accurate diagnosis, and designing <strong>personalized treatment plans</strong>
+      that focus on pain relief, functional recovery, and long-term well-being.
+    </p>
+    <p>
+      With hands-on expertise in orthopedic, neurological, pediatric, and cardio‑pulmonary rehabilitation,
+      Dr. Rajvi believes in a compassionate, result-oriented approach that helps patients regain confidence,
+      mobility, and independence in their daily lives.
+    </p>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Physiotherapy Focus Areas</h2>
+  <div class="services focus-animate">
+    <div class="card focus-card"><img src="neck.jpg" alt="Neck Pain"><p>Neck Pain</p></div>
+    <div class="card focus-card"><img src="shoulder.jpg" alt="Shoulder Pain"><p>Shoulder Pain</p></div>
+    <div class="card focus-card"><img src="elbow.jpg" alt="Elbow Pain"><p>Elbow Pain</p></div>
+    <div class="card focus-card"><img src="lower-back.jpg" alt="Lower Back Pain"><p>Lower Back Pain</p></div>
+    <div class="card focus-card"><img src="knee.jpg" alt="Knee Pain"><p>Knee Pain</p></div>
+    <div class="card focus-card"><img src="foot.jpg" alt="Foot Pain"><p>Foot Pain</p></div>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Internship Experience</h2></h2></h2>
+  <div class="card">
+    <ul>
+      <li>Bhailal Amin General Hospital</li>
+      <li>New Life Hospital</li>
+      <li>Sunshine Global Hospitals</li>
+      <li>Shukan Multi-Speciality Hospital</li>
+      <li>Bankers Heart & Multi-Speciality Hospital</li>
+      <li>Kashiben Children’s Hospital</li>
+    </ul>
+  </div>
+</section>
+
+</section>
+
+<section>
+  <h2>Education History</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Bachelor of Physiotherapy (BPT)</h3>
+      <p><strong>Pioneer Physiotherapy College, Vadodara</strong></p>
+      <p>Shri Govind Guru University, Godhra</p>
+      <p><em>Class of 2016 – 2020</em></p>
+    </div>
+    <div class="card">
+      <h3>Higher Secondary Examination</h3>
+      <p><strong>Baroda Public School</strong></p>
+      <p><em>Class of 2014 – 2016</em></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+  <div class="card" style="border:2px solid #2f4a63; background:#ffffff;">
+    <div class="card" style="margin-bottom:20px;">
+      <h3>Asian Physiotherapy & Research Institute</h3>
+      <p><strong>Physiotherapist</strong></p>
+      <p><em>2023 – Present</em></p>
+    </div>
+
+    <div class="card" style="margin-bottom:20px;">
+      <h3>VIROC Super Speciality Orthopaedic Hospital</h3>
+      <p><strong>Physiotherapist | Medical Assistant</strong></p>
+      <p><em>March 2022 – December 2023 (1 year, 9 months)</em></p>
+      <ul>
+        <li>Prepared detailed case notes and clinical reports</li>
+        <li>Pre & post-operative assessment for TKR, THR & trauma patients</li>
+        <li>Managed IPD & OPD patients including home visits</li>
+        <li>CPR trained & emergency patient handling</li>
+        <li>Regular communication with attending surgeons</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Omkar Physiotherapy, Rehabilitation & Fitness Center</h3>
+      <p><strong>Physiotherapist</strong></p>
+      <p><em>June 2021 – March 2022 (9 months)</em></p>
+      <ul>
+        <li>Orthopaedic & neurological rehabilitation</li>
+        <li>OA, back pain, cervical pain, tennis elbow, RA management</li>
+        <li>Patient education & preventive physiotherapy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Relevant Skills</h2>
+  <div class="services">
+    <div class="card">Pre & Post Operative Rehabilitation</div>
+    <div class="card">Orthopaedic Rehabilitation</div>
+    <div class="card">Neuro Rehabilitation</div>
+    <div class="card">Pediatric Physiotherapy</div>
+    <div class="card">Cardio-Pulmonary Rehabilitation</div>
+    <div class="card">Sport Injury Rehabilitation</div>
+    <div class="card">Electrotherapy</div>
+    <div class="card">Follow-up & Recovery Monitoring</div>
+  </div>
+</section>
+
+<section>
+  <h2>Physiotherapy Services</h2>
+  <div class="services">
+    <div class="card">Back Pain & Neck Pain Treatment</div>
+    <div class="card">Knee, Hip & Joint Pain Rehab</div>
+    <div class="card">Post-Operative Physiotherapy</div>
+    <div class="card">Stroke & Paralysis Rehabilitation</div>
+    <div class="card">Spinal Cord Injury Rehab</div>
+    <div class="card">General Fitness & Mobility Training</div>
+    <div class="card">Pediatric Physiotherapy</div>
+    <div class="card">Cardiac Rehabilitation</div>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>Patient Reviews</h2>
+  <div class="services">
+    <div class="card" style="display:flex;gap:15px;align-items:flex-start;">
+      <img src="abhisherk.png" alt="Abhishek Desai" style="width:70px;height:70px;border-radius:50%;object-fit:cover;" />
+      <div>
+        <strong>Abhishek Desai</strong><br>
+        ⭐⭐⭐⭐⭐
+        <p style="margin-top:6px;">Dr. Rajvi is an exceptionally skilled and knowledgeable physiotherapist. After suffering from chronic pain for a decade, her holistic approach provided significant relief. If I could leave 6 stars, I absolutely would.</p>
+      </div>
+    </div>
+
+    <div class="card" style="display:flex;gap:15px;align-items:flex-start;">
+      <img src="shailvi.png" alt="Shailvi Shah" style="width:70px;height:70px;border-radius:50%;object-fit:cover;" />
+      <div>
+        <strong>Shailvi Shah</strong><br>
+        ⭐⭐⭐⭐⭐
+        <p style="margin-top:6px;">We are truly grateful to Dr. Rajvi for the exceptional care she gave my husband after his disc surgery. Her expertise, patience, and encouragement made a remarkable difference in his recovery.</p>
+      </div>
+    </div>
+
+    <div class="card" style="display:flex;gap:15px;align-items:flex-start;">
+      <img src="isha.png" alt="Isha" style="width:70px;height:70px;border-radius:50%;object-fit:cover;" />
+      <div>
+        <strong>Isha</strong><br>
+        ⭐⭐⭐⭐⭐
+        <p style="margin-top:6px;">Dr. Rajvi’s home physiotherapy really helped reduce my knee pain. She is skilled, patient, and her exercises worked quickly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Book Free Consultation</h2>
+  <p>
+    Call now for a <strong>free consultation</strong> and get expert guidance on the right physiotherapy treatment
+    from the comfort of your home.
+  </p>
+  <a href="tel:+918866028911" class="btn-call">📞 Call Now</a>
+</section>
+
+
+<footer>
+  <p><strong>Clinic Address:</strong><br>
+  “Sivanjali”, Opp. Gundi Sheri,<br>
+  Mahidharpura, Surat – 395003,<br>
+  Gujarat, India</p>
+
+  <div style="margin:15px 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+  <a href="https://share.google/oUOANEgANlTqEKsGX" target="_blank" class="social-btn">
+    <img src="google.png" alt="Google" />
+    Google
+  </a>
+  <a href="https://www.instagram.com/truhealphysio?igsh=dDcwZGkxampucXYz" target="_blank" class="social-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    Instagram
+  </a>
+</div>
+
+  <p style="margin-top:10px;">© 2025 Dr Rajvi Soni | Physiotherapist<br>Home Visit Physiotherapy Available</p>
+</footer>
+
+<a href="https://wa.me/8866028911" class="fixed-call">💬 WhatsApp</a>
+
+</body>
+</html>
